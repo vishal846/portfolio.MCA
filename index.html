@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISHAL Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-white text-2xl font-semibold">MCA Portfolio</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+                <li><a href="#skills" class="text-white hover:text-gray-300">Skills</a></li>
+                <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-600 text-white h-screen flex items-center justify-center text-center">
+        <div>
+            <h1 class="text-5xl font-bold mb-4">Hello, I'm VISHAL</h1>
+            <p class="text-xl">An MCA student passionate about coding and web development.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg max-w-3xl mx-auto">
+            I am an MCA student with a deep interest in technology, programming, and problem-solving.
+            I am constantly learning and improving my skills in web development, data structures, and algorithms.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-200 py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Web Development</h3>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React.js, Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Programming Languages</h3>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>Java, C++</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Database Management</h3>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>SQL</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Project 1: Web Development</h3>
+                <p class="mt-2">A portfolio website built using HTML, CSS, and JavaScript. It is responsive and has smooth scrolling features.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Project 2: Data Analysis</h3>
+                <p class="mt-2">A Python-based project that analyzes and visualizes data from various sources using libraries like pandas and matplotlib.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Project 3: Task Management App</h3>
+                <p class="mt-2">A simple task management application built using React.js and Node.js for backend support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-600 text-white py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p class="text-lg mb-4">Feel free to reach out to me for any collaborations or inquiries.</p>
+        <form id="contact-form" class="max-w-lg mx-auto">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 mb-4 rounded-lg" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded-lg" required>
+            <textarea id="message" placeholder="Your Message" class="w-full p-2 mb-4 rounded-lg" rows="4" required></textarea>
+            <button type="submit" class="bg-white text-blue-600 px-6 py-2 rounded-lg">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+        });
+    </script>
+
+</body>
+</html>
